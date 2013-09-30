@@ -1,7 +1,7 @@
 package ckeditor;
 import ckeditor.dom.Document;
 import ckeditor.dom.Element;
-import js.Dom;
+import js.html.*;
 
 /**
  * This is the API entry point. The entire CKEditor code runs under this object.
@@ -525,7 +525,7 @@ extern class CKEDITOR
 	 * 			} );
 	 */
 	@:overload(function(className:String):Void{})
-	@:overload(function(customAssertions:Textarea->Config->Bool):Void{})
+	@:overload(function(customAssertions:TextAreaElement->Config->Bool):Void{})
 	static public function replaceAll():Void;
 	
 	// EVENTS
